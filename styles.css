@@ -125,6 +125,25 @@ footer {
     border-radius: 10px;
     width: 90%;
     max-width: 500px;
+    display: flex; /* Adiciona flexbox para alinhamento */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.modal-content form {
+    width: 100%; /* Faz o formulário ocupar toda a largura do modal */
+}
+
+.modal-content label {
+    margin: 10px 0; /* Espaçamento vertical entre os labels */
+}
+
+.modal-content input {
+    width: calc(100% - 20px); /* Ajusta a largura para considerar padding */
+    margin: 5px 0; /* Espaçamento vertical entre inputs */
+    padding: 10px; /* Adiciona padding interno */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
 }
 
 .close-button {
@@ -155,3 +174,34 @@ button {
     transition: background-color 0.3s;
 }
 
+#cart {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items {
+    display: flex; /* Ativa o flexbox para o container do carrinho */
+    overflow-x: auto; /* Permite rolagem horizontal se os itens excederem a largura */
+    padding: 10px 0; /* Espaçamento interno */
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: column; /* Alinha a imagem e o texto verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    min-width: 100px; /* Largura mínima para os itens */
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #fff; /* Fundo branco para os itens */
+}
+
+.cart-item img {
+    margin-bottom: 5px; /* Espaço abaixo da imagem */
+    width: 70px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção */
+}
