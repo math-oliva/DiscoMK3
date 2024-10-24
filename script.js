@@ -1,16 +1,16 @@
 const products = [
-    { name: "Disco 1", artist: "Artista 1", price: 50.00, image: "images/disco1.jpg" },
-    { name: "Disco 2", artist: "Artista 2", price: 40.00, image: "images/disco2.jpg" },
-    { name: "Disco 3", artist: "Artista 3", price: 60.00, image: "images/disco3.jpg" },
-    { name: "Disco 4", artist: "Artista 4", price: 45.00, image: "images/disco4.jpg" },
-    { name: "Disco 5", artist: "Artista 5", price: 55.00, image: "images/disco5.jpg" },
-    { name: "Disco 6", artist: "Artista 6", price: 70.00, image: "images/disco6.jpg" },
-    { name: "Disco 7", artist: "Artista 7", price: 35.00, image: "images/disco7.jpg" },
-    { name: "Disco 8", artist: "Artista 8", price: 80.00, image: "images/disco8.jpg" },
-    { name: "Disco 9", artist: "Artista 9", price: 65.00, image: "images/disco9.jpg" },
-    { name: "Disco 10", artist: "Artista 10", price: 90.00, image: "images/disco10.jpg" },
-    { name: "Disco 11", artist: "Artista 11", price: 55.00, image: "images/disco11.jpg" },
-    { name: "Disco 12", artist: "Artista 12", price: 75.00, image: "images/disco12.jpg" },
+    { name: "Tropicália: Panis et Circenses", artist: "Varios", price: 75.00, image: "images/disco1.jpg" },
+    { name: "Simon and Garfunkel's Greatest Hits", artist: "Simon and Garfunkel", price: 40.00, image: "images/disco2.jpg" },
+    { name: "No Sub Reino dos Metazoários", artist: "Marconi Notaro", price: 60.00, image: "images/disco3.jpg" },
+    { name: "Loaded", artist: "The Velvet Underground", price: 45.00, image: "images/disco4.jpg" },
+    { name: "Nashville Skyline", artist: "Bob Dylan", price: 55.00, image: "images/disco5.jpg" },
+    { name: "Let There Be Rock", artist: "AC/DC", price: 70.00, image: "images/disco6.jpg" },
+    { name: "Caymmi e Seu Violão", artist: "Dorival Caymmi", price: 35.00, image: "images/disco7.jpg" },
+    { name: "Zoot Allures", artist: "Frank Zappa", price: 80.00, image: "images/disco8.jpg" },
+    { name: "Born Under a Bad Sign", artist: "Albert King", price: 65.00, image: "images/disco9.jpg" },
+    { name: "Eric Clapton", artist: "Eric Clapton", price: 90.00, image: "images/disco10.jpg" },
+    { name: "Toys in the Attic", artist: "Aerosmith", price: 55.00, image: "images/disco11.jpg" },
+    { name: "Waka/Jawaka", artist: "Frank Zappa", price: 75.00, image: "images/disco12.jpg" },
 ];
 
 let cart = [];
