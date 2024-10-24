@@ -50,7 +50,15 @@ function changePage(direction) {
 function addToCart(productName) {
     const product = products.find(p => p.name === productName);
     if (product) {
-        cart.push(product);
+        // Verifica se o item já está no carrinho
+        const cartItem = cart.find(item => item.name === product.name);
+        if (cartItem) {
+            // Incrementa a quantidade se o item já estiver no carrinho
+            cartItem.quantity += 1;
+        } else {
+            // Adiciona o novo item ao carrinho com quantidade 1
+            cart.push({ ...product, quantity: 1 });
+        }
         updateCart();
     }
 }
@@ -64,9 +72,12 @@ function updateCart() {
     cart.forEach(item => {
         const cartItem = document.createElement('div');
         cartItem.className = 'cart-item';
-        cartItem.innerHTML = `<p>${item.name} - R$ ${item.price.toFixed(2)}</p>`;
+        cartItem.innerHTML = `
+            <img src="${item.image}" alt="${item.name}">
+            <p>${item.name} - R$ ${item.price.toFixed(2)} (Quantidade: ${item.quantity})</p>
+        `;
         cartItems.appendChild(cartItem);
-        total += item.price;
+        total += item.price * item.quantity; // Calcula o total com base na quantidade
     });
 
     document.getElementById('total-price').innerText = `Total: R$ ${total.toFixed(2)}`;
