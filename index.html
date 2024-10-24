@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Discos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo à Loja de Discos!</h1>
-        <nav>
+    <div id="banner">
+            <nav>
             <ul>
-                <li><a href="add-product.html">Adicionar Disco</a></li>
+                <li><a href="#cart">Carrinho</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
-    </header>
+        <img src="banner.jpg" alt="Promoção Especial!" style="width: 100%; height: auto;">
+    </div>
 
     <main>
         <section id="products">
@@ -31,18 +30,18 @@
             <h2>Carrinho de Compras</h2>
             <div id="cart-items"></div>
             <p id="total-price">Total: R$ 0,00</p>
-            <button id="checkout-button">Finalizar Compra</button>
+            <button id="checkout-button" onclick="openModal()">Finalizar Compra</button>
         </section>
     </main>
 
     <footer id="contact">
         <h2>Contato</h2>
-        <p>Email: contato@lojadediscos.com</p>
+        <p>Email: jjlps@protonmail.com</p>
         <p>Telefone: (11) 1234-5678</p>
         <p>&copy; 2024 Loja de Discos. Todos os direitos reservados.</p>
     </footer>
 
-    <div id="signup-modal" class="modal">
+    <div id="signup-modal" class="modal" role="dialog" aria-modal="true">
         <div class="modal-content">
             <span class="close-button" onclick="closeModal()">&times;</span>
             <h2>Cadastro de Cliente</h2>
@@ -62,7 +61,7 @@
                 <label for="bank">Dados Bancários:</label>
                 <input type="text" id="bank" required placeholder="Banco, Agência, Conta">
                 
-                <button type="submit">Finalizar Compra</button>
+                <button type="submit">Finalizar Cadastro</button>
             </form>
         </div>
     </div>
