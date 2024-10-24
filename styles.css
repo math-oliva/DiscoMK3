@@ -5,41 +5,47 @@ body {
     background-color: #f5f5f5; /* Fundo claro e neutro */
 }
 
-header {
-    background-color: #232F3E; /* Azul escuro similar ao Amazon */
+#banner {
+    text-align: center;
+    background-color: #000000; /* Cor de fundo do banner */
     color: #FFFFFF; /* Texto branco */
     padding: 20px 0;
-    text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
 
-header h1 {
-    font-size: 2.5em; /* Tamanho maior para o título */
-    margin: 0;
+#banner h1 {
+    margin: 0; /* Remove a margem do título */
+    font-size: 2.5em; /* Tamanho do título */
     letter-spacing: 1px; /* Espaçamento entre letras */
 }
 
-nav ul {
+#banner nav ul {
     list-style-type: none;
     padding: 0;
     margin: 15px 0 0; /* Margem para separar do título */
 }
 
-nav ul li {
+#banner nav ul li {
     display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
+#banner nav ul li a {
     color: #FFD814; /* Amarelo para links */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s, text-decoration 0.3s; /* Transição suave */
+    transition: color 0.3s; /* Transição suave */
 }
 
-nav ul li a:hover {
+#banner nav ul li a:hover {
     color: #FFFFFF; /* Branco ao passar o mouse */
     text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+#banner img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Borda arredondada */
 }
 
 #products, #cart {
@@ -76,7 +82,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background: #333; /* Fundo escuro para o rodapé */
+    background: #000000; /* Fundo escuro para o rodapé */
     color: white;
     text-align: center;
     padding: 20px;
@@ -92,17 +98,14 @@ footer {
 #prev-button, #next-button {
     padding: 10px 20px;
     margin: 0 10px;
-    background-color: #007bff; /* Azul */
-    color: white;
+    background-color: #000000; /* Azul */
+    color: yellow;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-#prev-button:hover, #next-button:hover {
-    background-color: #0056b3; /* Tom mais escuro ao passar o mouse */
-}
 
 .modal {
     display: none;
@@ -144,14 +147,11 @@ input[type="tel"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff; /* Azul para botões */
-    color: white;
+    background-color: #000000; /* Azul para botões */
+    color: yellow;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #0056b3; /* Tom mais escuro ao passar o mouse */
-}
